@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Resume – AI & DevOps Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f5;--paper:#fff;--ink:#16202e;--mute:#5b6778;--line:#dbe1ea;--accent:#0f6e6e;--tint:#e4f2f1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e131a;--paper:#161d27;--ink:#e8edf3;--mute:#93a0b2;--line:#283242;--accent:#4fc3c0;--tint:#183234}}
+:root[data-theme="dark"]{--bg:#0e131a;--paper:#161d27;--ink:#e8edf3;--mute:#93a0b2;--line:#283242;--accent:#4fc3c0;--tint:#183234}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 Inter,system-ui,sans-serif;padding:24px 12px}
+.page{max-width:820px;margin:0 auto;background:var(--paper);border:1px solid var(--line);display:grid;grid-template-columns:250px 1fr}
+aside{background:var(--tint);padding:32px 22px;border-right:1px solid var(--line)}
+main{padding:32px 30px}
+h1{font:700 30px/1.1 Fraunces,Georgia,serif;margin:0 0 6px}
+.role{color:var(--accent);font-weight:600;margin:0 0 24px}
+h2{font:600 16px/1.2 Fraunces,Georgia,serif;margin:0 0 10px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+aside h2{border-bottom-color:var(--line)}
+section{margin-bottom:22px}
+ul{margin:0;padding:0;list-style:none}
+aside li{margin-bottom:6px;overflow-wrap:anywhere}
+.contact li{color:var(--mute)}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:2px 8px;font-size:12px}
+.skill-group{margin-bottom:12px}
+.skill-group b{display:block;font-size:12.5px;margin-bottom:5px}
+.job{margin-bottom:16px}
+.job-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.job-head b{font-weight:600}
+.when{color:var(--mute);font-size:13px}
+.co{color:var(--accent);font-weight:500}
+.job li{position:relative;padding-left:14px;margin-top:4px}
+.job li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:2px;background:var(--accent)}
+.summary{margin:0}
+.proj{margin-bottom:10px}
+.proj b{font-weight:600}
+@media (max-width:640px){.page{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid var(--line)}}
+@media print{body{background:#fff;padding:0}.page{border:0;max-width:none}}
+</style>
+</head>
+<body>
+<div class="page">
+<aside>
+  <h1>Your Name</h1>
+  <p class="role">AI &amp; DevOps Engineer</p>
+  <section class="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>you@email.com</li>
+      <li>+1 (555) 000-0000</li>
+      <li>City, State</li>
+      <li>linkedin.com/in/yourname</li>
+      <li>github.com/yourname</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Skills</h2>
+    <div class="skill-group"><b>AI / ML</b><div class="tags"><span>Python</span><span>PyTorch</span><span>LLM APIs</span><span>RAG</span><span>LangChain</span><span>MLflow</span></div></div>
+    <div class="skill-group"><b>DevOps</b><div class="tags"><span>Kubernetes</span><span>Docker</span><span>Terraform</span><span>GitHub Actions</span><span>ArgoCD</span><span>Linux</span></div></div>
+    <div class="skill-group"><b>Cloud &amp; Observability</b><div class="tags"><span>AWS</span><span>GCP</span><span>Prometheus</span><span>Grafana</span><span>Datadog</span></div></div>
+  </section>
+  <section>
+    <h2>Education</h2>
+    <b>B.S. Computer Science</b><br>
+    <span class="when">University Name, 2022</span>
+  </section>
+  <section>
+    <h2>Certifications</h2>
+    <ul><li>AWS Solutions Architect – Associate</li><li>Certified Kubernetes Administrator</li></ul>
+  </section>
+</aside>
+<main>
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Engineer with 3 years of experience building the infrastructure that ships machine learning to production. I automate CI/CD, run Kubernetes platforms, and deploy LLM-powered services that are observable, cost-aware, and reliable.</p>
+  </section>
+  <section>
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job-head"><span><b>AI &amp; DevOps Engineer</b> · <span class="co">Company Name</span></span><span class="when">2024 – Present</span></div>
+      <ul>
+        <li>Deployed LLM inference and RAG services on Kubernetes with autoscaling, cutting p95 latency by 40%.</li>
+        <li>Built model CI/CD pipelines in GitHub Actions and ArgoCD, reducing release time from 2 days to 30 minutes.</li>
+        <li>Added token, cost, and quality monitoring in Prometheus and Grafana, lowering monthly inference spend by 25%.</li>
+        <li>Codified GPU and vector-database infrastructure in Terraform across dev, staging, and production.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><span><b>DevOps Engineer</b> · <span class="co">Previous Company</span></span><span class="when">2022 – 2024</span></div>
+      <ul>
+        <li>Migrated 20+ services to containers on EKS, improving uptime to 99.95%.</li>
+        <li>Standardized reusable pipeline templates that onboarded new teams in under a day.</li>
+        <li>Set up centralized logging and alerting, halving mean time to resolution.</li>
+        <li>Automated security scans and dependency checks in every build.</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <h2>Projects</h2>
+    <div class="proj"><b>MLOps Platform</b> – Self-serve training and deployment workflow using MLflow, Kubernetes, and Terraform for 5 data scientists.</div>
+    <div class="proj"><b>Incident Copilot</b> – LLM assistant that summarizes alerts and suggests runbook steps from past incidents.</div>
+  </section>
+</main>
+</div>
+</body>
+</html>
